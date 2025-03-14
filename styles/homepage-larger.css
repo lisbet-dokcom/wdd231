@@ -36,10 +36,10 @@ main {
     margin-top: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     border-radius: 5px;
-    position: sticky
+    position: sticky;
 }
 
-h1 {
+.h2 {
     font-size: 1.5rem;
     text-align: center;
     color: #eee;
@@ -103,7 +103,7 @@ h2 {
     margin-top: 0;
 }
 
-.first h3 {
+.first h2 {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 0;
@@ -113,7 +113,7 @@ h2 {
     padding: 7px;
 }
 
-.second h3 {
+.second h2 {
     font-size: 1.5rem;
     text-align: center;
     background-color: navy;
@@ -216,6 +216,6 @@ footer img {
     display: none;
 }
 
-.h1 {
+h1 {
     display: none;
 }

@@ -71,4 +71,8 @@
         justify-content: space-evenly;
     }
 
+    .heading img {
+        margin: 30px;
+    }
+
 }

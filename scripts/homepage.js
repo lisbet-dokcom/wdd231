@@ -67,8 +67,8 @@ cseLink.addEventListener("click", () => {
 
 wddLink.addEventListener("click", () => {
     const filteredTitle = titles.filter(title => title.title.startsWith("W"));
-    DisplayTitles(filteredTitle)
+    DisplayTitles(filteredTitle);
     selection.innerText = `The total number of course listed below is ${number * totalCourses}`;
-})
+});
 
 DisplayTitles(titles);
