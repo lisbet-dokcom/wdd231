@@ -1,0 +1,74 @@
+@media (max-width: 620px) {
+    main {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    #menu {
+        display: flex;
+        font-size: 2rem;
+        border: 0;
+        margin: 20px;
+        padding-top: 20px;
+        background: none;
+        color: white;
+        cursor: pointer;
+    }
+
+    #menu::before {
+        content: "☰";
+    }
+
+    #menu.open::before {
+        content: "❎";
+    }
+
+    .nav1 {
+        opacity: 0;
+        max-height: 0;
+        /* Set a small max-height */
+        overflow: hidden;
+        /* Hide content when collapsed */
+        flex-direction: column;
+        background-color: #000505;
+        transition: opacity 0.5s ease, max-height 0.5s ease;
+    }
+
+    .nav1.open {
+        opacity: 1;
+        max-height: 2000px;
+        /* Set a large enough value to allow the content to show */
+    }
+
+    .nav1 a {
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+        text-decoration: none;
+    }
+
+    .nav1 a:hover {
+        text-decoration: underline;
+    }
+
+    .nav1.open {
+        display: flex;
+    }
+
+    .first {
+        grid-template-columns: 1fr;
+        place-content: center;
+    }
+
+    #course {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav2 {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+}
