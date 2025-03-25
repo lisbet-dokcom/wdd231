@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Alpha Tech Solutions",
+        "adderss": "123 Innovation Drive, Silicon Valley, CA",
+        "phoneNumber": "(650) 555-1234",
+        "websiteUrl": "http://www.alphatech.com/",
+        "image": "",
+        "membershipLevel": "3 (Gold)",
+        "others": " Specializes in AI and cybersecurity solutions."
+    },
+    {
+        "name": "Green Earth Landscaping",
+        "adderss": "45 Greenway Blvd, Denver, CO",
+        "phoneNumber": "(303) 555-9876",
+        "websiteUrl": "http://www.greenearth.com/",
+        "image": "",
+        "membershipLevel": "2 (Silver)",
+        "others": "Offers eco-friendly landscaping services and urban garden designs."
+    },
+    {
+        "name": "Speedy Logistics Inc.",
+        "adderss": "78 Cargo Lane, Miami, FL",
+        "phoneNumber": "(305) 555-7654",
+        "websiteUrl": "http://www.speedylogistics.com/",
+        "image": "",
+        "membershipLevel": "1 (Member)",
+        "others": "Specializes in international shipping and freight forwarding."
+    },
+    {
+        "name": "Fresh Bites Catering",
+        "adderss": "202 Gourmet Street, New York, NY",
+        "phoneNumber": "(212) 555-4321",
+        "websiteUrl": "http://www.freshbites.com/",
+        "image": "",
+        "membershipLevel": "3 (Gold)",
+        "others": "Provides catering services for corporate events and weddings."
+    },
+    {
+        "name": "NexGen Web Developers",
+        "adderss": "99 Code Lane, Austin, TX",
+        "phoneNumber": "(512) 555-6543",
+        "websiteUrl": "http://www.nexgenweb.com/",
+        "image": "",
+        "membershipLevel": "2 (Silver)",
+        "others": "Specializes in website design, app development, and SEO."
+    },
+    {
+        "name": "Zenith Fitness Gym",
+        "adderss": "55 Health Avenue, Los Angeles, CA",
+        "phoneNumber": "(310) 555-2345",
+        "websiteUrl": "http://www.zenithfitness.com/",
+        "image": "",
+        "membershipLevel": "1 (Member)",
+        "others": "Offers 24/7 access to gym facilities, personal trainers, and online coaching."
+    },
+    {
+        "name": "Bright Future Education Center",
+        "adderss": "120 Academy Road, Chicago, IL",
+        "phoneNumber": "(773) 555-8765",
+        "websiteUrl": "http://www.brightfutredu.com/",
+        "image": "",
+        "membershipLevel": "3 (Gold)",
+        "others": "Provides online and in-person tutoring for students in STEM subjects."
+    }
+]

@@ -1,0 +1,23 @@
+{
+    "familyName": "Ola",
+    "date": "21st March 2024",
+    "familyNumber": 3,
+    "vistedBishopric": true,
+    "individuals": [
+        {
+            "name": "Bayo",
+            "gender": "Male",
+            "birthDate": "8th January, 1998"
+        },
+        {
+            "name": "Ann",
+            "gender": "Female",
+            "birthDate": "27th July, 2001"
+        },
+        {
+            "name": "Justin",
+            "gender": "Male",
+            "birthDate": "1st March, 1994"
+        }
+    ]
+}
