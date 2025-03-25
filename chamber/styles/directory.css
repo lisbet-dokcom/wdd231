@@ -136,3 +136,7 @@ footer {
     justify-items: center;
     line-height: 0.5;
 }
+
+.foot-link nav a {
+    text-decoration: none;
+}
