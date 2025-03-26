@@ -5,47 +5,45 @@
     }
 
     #menu {
-        display: flex;
+        display: block;
         font-size: 2rem;
-        border: 0;
-        margin: 20px;
-        padding-top: 20px;
-        background: none;
-        color: white;
+        color: black;
         cursor: pointer;
+        position: absolute;
+        top: 40px;
+        right: 20px;
+        background: none;
+        border: none;
     }
 
     #menu::before {
         content: "☰";
     }
 
-    #menu:hover {
-        transform: none;
-    }
-
     #menu.open::before {
         content: "❎";
     }
 
-    .head {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 190px;
-        position: sticky;
+    #menu:hover {
+        transform: none;
     }
 
-    nav {
-        display: none;
+    .head-links {
+        opacity: 0;
+        max-height: 0;
+        width: 100%;
+        overflow: hidden;
         flex-direction: column;
-        background-color: #000505;
+        background-color: #000;
+        transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
     }
 
-    nav.open {
-        display: flex;
+    .head-links.open {
+        opacity: 1;
+        max-height: 100vh;
     }
 
-
-    nav a {
+    .head-links a {
         display: block;
         color: #fff;
         text-align: center;
@@ -53,29 +51,17 @@
         text-decoration: none;
     }
 
-    nav a:hover {
+    .head-links a:hover {
         text-decoration: underline;
     }
 
-    .grid {
+    .head-links.open {
+        display: flex;
+    }
+
+    #members.grid,
+    footer {
         grid-template-columns: 1fr;
         place-content: center;
-    }
-
-    .grid div {
-        max-width: 3100%;
-        padding: 10px;
-        box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2), -4px -4px 6px rgba(0, 0, 0, 0.2);
-    }
-
-    .grid img {
-        width: 100%;
-        max-width: 300px;
-        border-radius: 6px;
-        margin: 0 auto;
-    }
-
-    footer {
-        line-height: 0.8;
     }
 }

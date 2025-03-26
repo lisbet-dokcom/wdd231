@@ -1,8 +1,5 @@
-body {
-    background-image: url(images/bizconnect.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+* {
+    box-sizing: border-box;
 }
 
 main {
@@ -11,22 +8,41 @@ main {
     padding: 20px;
 }
 
+body {
+    font-family: "Winky Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
 header {
-    background-color: transparent;
+    background-color: white;
     box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.3);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 10px;
+    padding: 20px;
 }
 
 .head {
     display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .head img {
-    width: 250px;
-    border-radius: 20px;
-    object-fit: contain;
+    width: 100%;
+    max-width: 100px;
+    border-radius: 5%;
+    object-fit: cover;
+    height: auto;
 }
 
 #menu {
@@ -37,6 +53,7 @@ nav {
     display: flex;
     justify-content: space-evenly;
     justify-items: center;
+    align-items: center;
     padding-top: 35px;
 }
 
@@ -113,7 +130,6 @@ nav a:hover {
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    background-color: #bed;
 }
 
 #list,
@@ -130,13 +146,12 @@ button:hover {
 
 footer {
     background-color: transparent;
-    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
     display: grid;
     margin-top: 20px;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
-    line-height: 0.2;
 }
 
 .foot-link nav a {
@@ -146,7 +161,3 @@ footer {
 h1 {
     display: none;
 }
-
-/* .mem-card {
-    display: none;
-} */

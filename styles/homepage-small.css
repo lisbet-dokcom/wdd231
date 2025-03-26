@@ -27,7 +27,7 @@
         opacity: 0;
         max-height: 0;
         /* Set a small max-height */
-        overflow: hidden;
+        /* overflow: hidden; */
         /* Hide content when collapsed */
         flex-direction: column;
         background-color: #000505;
@@ -36,7 +36,7 @@
 
     .nav1.open {
         opacity: 1;
-        max-height: 2000px;
+        max-height: 100vh;
         /* Set a large enough value to allow the content to show */
     }
 
