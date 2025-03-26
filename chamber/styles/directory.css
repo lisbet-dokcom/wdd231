@@ -1,6 +1,8 @@
-* {
-    box-sizing: border-box;
-    object-fit: contain;
+body {
+    background-image: url(https://images.pexels.com/photos/290595/pexels-photo-290595.jpeg?auto=compress&cs=tinysrgb&w=600);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 main {
@@ -10,7 +12,8 @@ main {
 }
 
 header {
-    background-color: orange;
+    background-color: transparent;
+    box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.3);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding: 10px;
@@ -20,10 +23,10 @@ header {
     display: flex;
 }
 
-.head h4 {
-    color: blue;
-    display: flex;
-    align-items: flex-end;
+.head img {
+    width: 250px;
+    border-radius: 20px;
+    object-fit: contain;
 }
 
 #menu {
@@ -39,7 +42,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.9vw;
     color: black;
 }
 
@@ -49,14 +52,18 @@ nav a:hover {
     opacity: 0.9;
 }
 
-.grid {
+#members {
+    display: none;
+}
+
+#members.grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
-    font-size: 1rem;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     align-items: center;
+    font-size: 1vw;
+    line-height: 0.78;
     justify-items: center;
 }
 
@@ -75,17 +82,17 @@ nav a:hover {
     margin: 0 auto;
 }
 
-.list {
+#members.list {
     display: flex;
     flex-direction: column;
+    font-size: 1vw;
 }
 
 .list div {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    /* grid-template-columns: 2fr 1fr 1fr 1fr; */
     margin: 0;
-    padding: 0.25rem;
+    padding: 4px;
 }
 
 .list div>* {
@@ -94,12 +101,6 @@ nav a:hover {
 
 .list div img {
     display: none;
-    /* smaller viewports only */
-}
-
-.list div h3 {
-    font-size: 1rem;
-    font-family: Roboto, Helvetica, sans-serif;
 }
 
 .list div:nth-child(even) {
@@ -128,15 +129,24 @@ button:hover {
 }
 
 footer {
-    background-color: orange;
+    background-color: transparent;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.3);
     display: grid;
     margin-top: 20px;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
     justify-items: center;
-    line-height: 0.5;
+    line-height: 0.2;
 }
 
 .foot-link nav a {
     text-decoration: none;
 }
+
+h1 {
+    display: none;
+}
+
+/* .mem-card {
+    display: none;
+} */

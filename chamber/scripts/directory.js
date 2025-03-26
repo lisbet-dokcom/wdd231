@@ -14,52 +14,58 @@ hamButton.addEventListener("click", () => {
 document.querySelectorAll("nav").forEach(n => n.addEventListener("click", () => {
     nav.classList.remove('open');
     hamButton.classList.remove('open');
-}))
+}));
 
+const gridButton = document.getElementById("grid");
+const listButton = document.getElementById("list");
+const memberContainer = document.getElementById("members");
 
-fetch("data/members.json")
-    .then(response => response.json())
-    .then(data => {
-        console.log(data);
-        DisplayMembers(data);
-    })
-    .catch(error => console.error(error));
+async function fetchMembers() {
+    try {
+        const response = await fetch("data/members.json");
+        const data = await response.json();
+        displayMembers(data);
+    } catch (error) {
+        console.error("Error fetching members:", error);
+    }
+}
 
-function DisplayMembers(members) {
-    const member = document.querySelector("#members");
-    member.innerHTML = "";
-    members.forEach(function (mem) {
+function displayMembers(members) {
+    memberContainer.innerHTML = "";
+    memberContainer.classList.add("grid");
+
+    members.forEach((mem) => {
         const card = document.createElement("div");
-        card.className = "mem-card";
+        card.classList.add("mem-card");
 
         card.innerHTML = `
-        <h3>${mem.name}</h3>
-        <p>${mem.adderss}</p>
-        <p>${mem.phoneNumber}</p>
-        <p>${mem.membershipLevel}</p>
-        <p>${mem.websiteUrl}</p>
-        <p>${mem.others}</p>`
+            <h2>${mem.name}</h2>
+            <p>${mem.address}</p>
+            <p>${mem.phoneNumber}</p>
+            <p><strong>Membership:</strong> ${mem.membershipLevel}</p>
+            <p><a href="${mem.websiteUrl}" target="_blank">${mem.websiteUrl}</a></p>
+            <p>${mem.others}</p>`;
 
         const image = document.createElement("img");
         image.src = mem.image;
-        image.alt = mem.name;
+        image.alt = `Logo of ${mem.name}`;
         image.loading = "lazy";
         card.appendChild(image);
 
-        member.appendChild(card);
-    })
+        memberContainer.appendChild(card);
+    });
 }
 
-const gridbutton = document.getElementById("grid");
-const listbutton = document.getElementById("list");
-const memberContainer = document.querySelector("#members");
-
-gridbutton.addEventListener("click", () => {
+gridButton.addEventListener("click", () => {
     memberContainer.classList.add("grid");
     memberContainer.classList.remove("list");
-})
+});
 
-listbutton.addEventListener("click", () => {
+listButton.addEventListener("click", () => {
     memberContainer.classList.add("list");
     memberContainer.classList.remove("grid");
-})
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+    fetchMembers();
+});

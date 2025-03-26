@@ -1,7 +1,7 @@
 [
     {
         "name": "Alpha Tech Solutions",
-        "adderss": "123 Innovation Drive, Silicon Valley, CA",
+        "address": "123 Innovation Drive, Silicon Valley, CA",
         "phoneNumber": "(650) 555-1234",
         "websiteUrl": "http://www.alphatech.com/",
         "image": "images/alpha.JPG",
@@ -10,7 +10,7 @@
     },
     {
         "name": "Green Earth Landscaping",
-        "adderss": "45 Greenway Blvd, Denver, CO",
+        "address": "45 Greenway Blvd, Denver, CO",
         "phoneNumber": "(303) 555-9876",
         "websiteUrl": "http://www.greenearth.com/",
         "image": "images/green.JPG",
@@ -19,7 +19,7 @@
     },
     {
         "name": "Speedy Logistics Inc.",
-        "adderss": "78 Cargo Lane, Miami, FL",
+        "address": "78 Cargo Lane, Miami, FL",
         "phoneNumber": "(305) 555-7654",
         "websiteUrl": "http://www.speedylogistics.com/",
         "image": "images/speedy.JPG",
@@ -28,7 +28,7 @@
     },
     {
         "name": "Fresh Bites Catering",
-        "adderss": "202 Gourmet Street, New York, NY",
+        "address": "202 Gourmet Street, New York, NY",
         "phoneNumber": "(212) 555-4321",
         "websiteUrl": "http://www.freshbites.com/",
         "image": "images/FRESH.JPG",
@@ -37,7 +37,7 @@
     },
     {
         "name": "NexGen Web Developers",
-        "adderss": "99 Code Lane, Austin, TX",
+        "address": "99 Code Lane, Austin, TX",
         "phoneNumber": "(512) 555-6543",
         "websiteUrl": "http://www.nexgenweb.com/",
         "image": "images/NEXT-GEN.JPG",
@@ -46,7 +46,7 @@
     },
     {
         "name": "Zenith Fitness Gym",
-        "adderss": "55 Health Avenue, Los Angeles, CA",
+        "address": "55 Health Avenue, Los Angeles, CA",
         "phoneNumber": "(310) 555-2345",
         "websiteUrl": "http://www.zenithfitness.com/",
         "image": "images/ZENITH.JPG",
@@ -55,7 +55,7 @@
     },
     {
         "name": "Bright Future Education Center",
-        "adderss": "120 Academy Road, Chicago, IL",
+        "address": "120 Academy Road, Chicago, IL",
         "phoneNumber": "(773) 555-8765",
         "websiteUrl": "http://www.brightfutredu.com/",
         "image": "images/bright.JPG",
