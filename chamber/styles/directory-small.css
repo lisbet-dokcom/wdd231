@@ -61,4 +61,12 @@
         grid-template-columns: 1fr;
         place-content: center;
     }
+
+    #members h2 {
+        font-size: 18px;
+    }
+
+    #members.grid {
+        font-size: 14px;
+    }
 }
