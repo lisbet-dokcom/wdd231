@@ -13,7 +13,7 @@
         "address": "45 Greenway Blvd, Denver, CO",
         "phoneNumber": "(303) 555-9876",
         "websiteUrl": "http://www.greenearth.com/",
-        "image": "images/green.png",
+        "image": "images/green.jpg",
         "membershipLevel": "2 (Silver)",
         "others": "Offers eco-friendly landscaping services and urban garden designs."
     },
@@ -22,7 +22,7 @@
         "address": "78 Cargo Lane, Miami, FL",
         "phoneNumber": "(305) 555-7654",
         "websiteUrl": "http://www.speedylogistics.com/",
-        "image": "images/speedy.png",
+        "image": "images/speedy.jpg",
         "membershipLevel": "1 (Member)",
         "others": "Specializes in international shipping and freight forwarding."
     },
@@ -31,7 +31,7 @@
         "address": "202 Gourmet Street, New York, NY",
         "phoneNumber": "(212) 555-4321",
         "websiteUrl": "http://www.freshbites.com/",
-        "image": "images/fresh.png",
+        "image": "images/fresh.jpg",
         "membershipLevel": "3 (Gold)",
         "others": "Provides catering services for corporate events and weddings."
     },
@@ -40,7 +40,7 @@
         "address": "99 Code Lane, Austin, TX",
         "phoneNumber": "(512) 555-6543",
         "websiteUrl": "http://www.nexgenweb.com/",
-        "image": "images/next-gen.png",
+        "image": "images/next-gen.jpg",
         "membershipLevel": "2 (Silver)",
         "others": "Specializes in website design, app development, and SEO."
     },
@@ -49,7 +49,7 @@
         "address": "55 Health Avenue, Los Angeles, CA",
         "phoneNumber": "(310) 555-2345",
         "websiteUrl": "http://www.zenithfitness.com/",
-        "image": "images/zenith.png",
+        "image": "images/zenith.jpg",
         "membershipLevel": "1 (Member)",
         "others": "Offers 24/7 access to gym facilities, personal trainers, and online coaching."
     },
@@ -58,8 +58,26 @@
         "address": "120 Academy Road, Chicago, IL",
         "phoneNumber": "(773) 555-8765",
         "websiteUrl": "http://www.brightfutredu.com/",
-        "image": "images/bright.png",
+        "image": "images/bright.jpg",
         "membershipLevel": "3 (Gold)",
         "others": "Provides online and in-person tutoring for students in STEM subjects."
+    },
+    {
+        "name": "Tech Innovators Inc.",
+        "address": "123 Innovation Drive, Silicion Valley, CA 94025",
+        "phoneNumber": "(650) 123-4567",
+        "websiteUrl": "http://www.techinnovation.com/",
+        "image": "images/tech.jpg",
+        "membershipLevel": "3 (Gold)",
+        "others": "Specialize in AI and cloud computing."
+    },
+    {
+        "name": "Green Solutions Ltd.",
+        "address": "456 Eco Street, Austin, TX 73301",
+        "phoneNumber": "(512) 987-6543",
+        "websiteUrl": "http://www.greensolutions.com/",
+        "image": "images/landscape.jpg",
+        "membershipLevel": "2 (Silver)",
+        "others": "Providing sustainable energy solutions for homes and businesses."
     }
 ]
