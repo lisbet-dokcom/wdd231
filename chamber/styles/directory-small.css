@@ -28,35 +28,32 @@
         transform: none;
     }
 
+    header {
+        display: block;
+    }
+
     .head-links {
         opacity: 0;
         max-height: 0;
         width: 100%;
         overflow: hidden;
         flex-direction: column;
-        background-color: #000;
         transition: opacity 0.5s ease-in-out, max-height 0.5s ease-in-out;
+        background-color: black;
+        gap: 0;
+    }
+
+    .head-links a {
+        display: block;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        padding: 1rem;
     }
 
     .head-links.open {
         opacity: 1;
         max-height: 100vh;
-    }
-
-    .head-links a {
-        display: block;
-        color: #fff;
-        text-align: center;
-        padding: 1rem;
-        text-decoration: none;
-    }
-
-    .head-links a:hover {
-        text-decoration: underline;
-    }
-
-    .head-links.open {
-        display: flex;
     }
 
     #members.grid,
