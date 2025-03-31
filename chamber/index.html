@@ -13,16 +13,12 @@
     <meta property="og:url" content="https://lisbet-dokcom.github.io/wdd231/chamber/directory.html">
     <title>Chamber - Directory Page</title>
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
-    <link rel="stylesheet" href="../styles/normalize.css">
+    <script src="scripts/index.js" defer></script>
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-small.css">
+    <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="icon" href="images/favicon.ico">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playwrite+HU&family=Roboto:ital,wght@0,100..900;1,100..900&family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap"
-        rel="stylesheet">
+
 </head>
 
 <body>
@@ -37,16 +33,34 @@
             <a href="join.html">Join</a>
             <a href="discover.html">Discover</a>
         </nav>
-
     </header>
     <main>
-        <h1>Timbuktu Chamber Commerce</h1>
-        <div class="container">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-
-        </div>
-        <div id="members"></div>
+        <img class="hero" src="images/tech.jpg" alt="">
+        <button class="cta">
+            <a href="">Join Now</a>
+        </button>
+        <h2>Home</h2>
+        <section class="first">
+            <div class="weather-info">
+                <h3>Event</h3>
+            </div>
+            <div class="weather-info">
+                <h3>Current Weather</h3>
+                <div class="info">
+                    <img id="weather-icon" src="" alt="">
+                    <p id="fig"></p>
+                </div>
+            </div>
+            <div class="weather-info">
+                <h3>Weather Forecast</h3>
+                <p id="today"></p>
+                <p id="wednesday"></p>
+                <p id="thursday"></p>
+            </div>
+        </section>
+        <section>
+            <div id="business"></div>
+        </section>
     </main>
     <footer>
         <div class="foot-info">
@@ -77,6 +91,7 @@
             <p> <span id="lastModified"></span></p>
         </div>
     </footer>
+
 </body>
 
 </html>

@@ -148,3 +148,105 @@ h1 {
 .foot-links a {
     text-decoration: none;
 }
+
+.first {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.first h3 {
+    background-color: orange;
+    font-size: 1.3rem;
+    height: 10%;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.weather-info {
+    background-color: palegreen;
+}
+
+.weather-info p {
+    margin-left: 10px;
+}
+
+.info {
+    font-size: 16px;
+    display: flex;
+}
+
+.hero {
+
+    height: 100vh;
+    background: url('images/tech.jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.cta {
+    background-color: orange;
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    width: 200px;
+    height: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.cta a {
+    text-decoration: none;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    font-size: 1.2rem;
+}
+
+form {
+    max-width: 550px;
+    height: auto;
+}
+
+input {
+    height: 2.5rem;
+    border-radius: 10px;
+}
+
+legend {
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+.membership {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>First Name <input type="text"></label>
+                <label>Last Name <input type="text"></label>
+                <label>Business Name <input type="text"></label>
+                <label>Title or Position <input type="text"></label>
+            </fieldset>
+        </form> */
