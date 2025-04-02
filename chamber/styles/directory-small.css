@@ -57,7 +57,8 @@
     }
 
     #members.grid,
-    footer {
+    footer,
+    .membership {
         grid-template-columns: 1fr;
         place-content: center;
     }

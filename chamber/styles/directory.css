@@ -205,7 +205,8 @@ label {
     display: flex;
     flex-direction: column;
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 form {
@@ -216,11 +217,32 @@ form {
 input {
     height: 2.5rem;
     border-radius: 10px;
+    border-left-color: pink;
 }
 
-legend {
-    font-weight: bolder;
-    font-size: 1.5rem;
+fieldset {
+    border: none;
+}
+
+.myradio input[type="radio"] {
+    width: 25px;
+    height: 20px;
+    accent-color: blue;
+}
+
+.myradio {
+    cursor: pointer;
+    display: grid;
+    font-weight: bold;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+textarea {
+    height: 100px;
+}
+
+::placeholder {
+    padding-left: 10px;
 }
 
 .membership {
@@ -228,25 +250,59 @@ legend {
     grid-template-columns: repeat(2, 1fr);
 }
 
+.real-members {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 20px;
+    height: auto;
+}
 
+.real-members h3 {
+    margin-top: 0;
+}
 
+.application {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 20px;
+    border: none;
+    border-radius: 20px;
+}
 
+.application:hover {
+    transform: none;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
 
+.plan button {
+    background-color: none;
+    font-weight: bolder;
+    margin-bottom: 200px;
+}
 
+.plan button:hover {
+    transition: none;
+}
 
+.plan h4 {
+    margin-bottom: 10px;
+}
 
+.plan {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: purple;
+    border-radius: 5px 20px;
+    margin-bottom: 20px;
+    height: 100px;
+}
 
-
-
-
-
-
-/*  <form>
-            <fieldset>
-                <legend>Personal Information</legend>
-                <label>First Name <input type="text"></label>
-                <label>Last Name <input type="text"></label>
-                <label>Business Name <input type="text"></label>
-                <label>Title or Position <input type="text"></label>
-            </fieldset>
-        </form> */
+#closeButton {
+    float: right;
+}

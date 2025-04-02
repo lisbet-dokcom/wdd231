@@ -13,6 +13,7 @@
     <meta property="og:url" content="https://lisbet-dokcom.github.io/wdd231/chamber/directory.html">
     <title>Chamber - Directory Page</title>
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/join.js" defer></script>
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/directory-small.css">
     <link rel="stylesheet" href="../styles/normalize.css">
@@ -34,35 +35,59 @@
         </nav>
     </header>
     <main>
-        <h3>Welcome to the Timbuktu Chamber of Commerce Signup Wizard!</h3>
+        <h2>Welcome to the Timbuktu Chamber of Commerce Signup Wizard!</h2>
         <section class="membership">
-            <form>
+            <form action="thank-you.html" method="get">
+                <h3>Membership Application Form</h3>
                 <fieldset>
-                    <legend>Personal Information</legend>
-                    <label>First Name <input type="text"></label>
-                    <label>Last Name <input type="text"></label>
-                    <label>Business Name <input type="text"></label>
-                    <label>Title or Position <input type="text"></label>
+                    <label>First Name <input type="text" name="Firstname" title="Firstname" required></label>
+                    <label>Last Name <input type="text" name="Lastname" title="Lastname" required></label>
+                    <label>Organizational Title <input type="text" name="organizationalTitle"
+                            title="organizational"></label>
+                    <label>Email Address <input type="email" name="emailAddress" title="emailAddress"
+                            autocomplete="email" placeholder="johndoe@gmail.com" required></label>
+                    <label>Mobile Phone Number <input type="tel" name="phoneNumber" title="phoneNumber"
+                            required></label>
+                    <label>Business Name<input type="text" name="busName" title="busName" autocomplete="organization"
+                            required></label>
+                    <fieldset>
+                        <h4>Membership Plans</h4>
+                        <label class="myradio">Basic Plan<input type="radio" name="level" value="nonprofit"
+                                required></label>
+                        <label class="myradio">Bronze Plan<input type="radio" name="level" value="nonprofit"
+                                required></label>
+                        <label class="myradio">Silver Plan<input type="radio" name="level" value="nonprofit"
+                                required></label>
+                        <label class="myradio">Gold Plan<input type="radio" name="level" value="nonprofit"
+                                required></label>
+                    </fieldset>
+                    <label>Business Description <textarea title="description" name="description"></textarea></label>
+                    <label>Timestamp <input type="hidden"></label>
+                    <button type="submit" class="application">Submit Application Form</button>
                 </fieldset>
             </form>
-            <section>
-                <h4>Membership Levels</h4>
-                <div>
-                    <h5>Non Profit Membership Level</h5>
-                    <div></div>
+            <section class="real-members">
+                <h3>Membership Levels</h3>
+                <div class="plan">
+                    <h4>Non Profit Membership Level</h4>
+                    <button id="nonMembers">Learn More</button>
                 </div>
-                <div>
-                    <h5>Bronze Membership Level</h5>
-                    <div></div>
+                <div class="plan">
+                    <h4>Bronze Membership Level</h4>
+                    <button id="bronzeMembers">Learn More</button>
                 </div>
-                <div>
-                    <h5>Silver Membership Level</h5>
-                    <div></div>
+                <div class="plan">
+                    <h4>Silver Membership Level</h4>
+                    <button id="silverMembers">Learn More</button>
                 </div>
-                <div>
-                    <h5>Gold Membership Level</h5>
-                    <div></div>
+                <div class="plan">
+                    <h4>Gold Membership Level</h4>
+                    <button id="goldMembers">Learn More</button>
                 </div>
+                <dialog id="mydialog">
+                    <button id="closeButton">X</button>
+                    <div></div>
+                </dialog>
             </section>
         </section>
     </main>
