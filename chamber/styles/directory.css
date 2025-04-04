@@ -176,31 +176,6 @@ h1 {
     display: flex;
 }
 
-.hero {
-
-    height: 100vh;
-    background: url('images/tech.jpg') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-
-.cta {
-    background-color: orange;
-    position: absolute;
-    bottom: 0;
-    right: 200px;
-    width: 200px;
-    height: 50px;
-    margin: 20px;
-    border-radius: 15px;
-}
-
-.cta a {
-    text-decoration: none;
-}
-
 label {
     display: flex;
     flex-direction: column;
@@ -216,8 +191,12 @@ form {
 
 input {
     height: 2.5rem;
-    border-radius: 10px;
-    border-left-color: pink;
+    border-radius: 5px;
+    border-left: 5px solid;
+}
+
+input:hover {
+    border-left: 5px solid #bed;
 }
 
 fieldset {
@@ -264,12 +243,9 @@ textarea {
 
 .application {
     font-weight: bold;
-    display: flex;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
     border: none;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 .application:hover {
@@ -282,7 +258,6 @@ textarea {
 .plan button {
     background-color: none;
     font-weight: bolder;
-    margin-bottom: 200px;
 }
 
 .plan button:hover {
@@ -297,7 +272,7 @@ textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: purple;
+    background-color: #bed;
     border-radius: 5px 20px;
     margin-bottom: 20px;
     height: 100px;
@@ -305,4 +280,43 @@ textarea {
 
 #closeButton {
     float: right;
+}
+
+.result h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+#thankYou {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.my_cover {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.hero a {
+    position: absolute;
+    right: 10px;
+    bottom: 10%;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 12px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
 }

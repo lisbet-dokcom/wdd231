@@ -63,11 +63,19 @@
         place-content: center;
     }
 
-    #members h2 {
+    #members.grid h2 {
         font-size: 18px;
     }
 
     #members.grid {
         font-size: 14px;
     }
+
+    /* #members.list h2 {
+        font-size: 18px;
+    }
+
+    #members.list {
+        font-size: 10px;
+    } */
 }

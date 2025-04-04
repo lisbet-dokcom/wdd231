@@ -5,6 +5,8 @@ const nonMembers = document.querySelector('#nonMembers');
 const mydialog = document.querySelector('#mydialog');
 const closeButton = document.querySelector("#closeButton");
 const mydialogText = document.querySelector('#mydialog div');
+// const currentdate = document.querySelector("#currentdate") = new Date();
+// currentdate.textContent = new Date().toLocaleDateString();
 
 nonMembers.addEventListener("click", () => {
     mydialog.showModal();
