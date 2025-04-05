@@ -17,7 +17,7 @@ async function apiFetch() {
         const response = await fetch(Weatherurl);
         if (response.ok) {
             const info = await response.json();
-            console.log(info);
+            // console.log(info);
             displayResult(info);
         } else {
             throw Error(await response.text());
@@ -32,8 +32,8 @@ async function forFetch() {
         const respond = await fetch(forcastUrl);
         if (respond.ok) {
             const fore = await respond.json();
-            console.log(fore);
-            console.log("hello");
+            // console.log(fore);
+            // console.log("hello");
             displayForecast(fore);
         } else {
             throw Error(await respond.text());
@@ -84,9 +84,9 @@ async function loadSpotlights() {
 }
 
 function displayForecast(fore) {
-    today.innerHTML = `<p>Today: <strong>${fore.list[4].main.temp}</strong></p>`
-    wednesday.innerHTML = `<p>Wednesday: <strong>${fore.list[24].main.temp}</strong></p>`
-    thursday.innerHTML = `<p>Thursday: <strong>${fore.list[39].main.temp}</strong></p>`
+    today.innerHTML = `<p>Today: <strong>${fore.list[4].main.temp}&deg;F</strong></p>`
+    wednesday.innerHTML = `<p>Wednesday: <strong>${fore.list[24].main.temp}&deg;F</strong></p>`
+    thursday.innerHTML = `<p>Thursday: <strong>${fore.list[39].main.temp}&deg;F</strong></p>`
 }
 
 function formatTime(timestamp) {
