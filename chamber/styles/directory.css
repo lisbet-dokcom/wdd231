@@ -149,7 +149,9 @@ h1 {
     text-decoration: none;
 }
 
-.first {
+
+
+.first-section {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
     grid-gap: 20px;
@@ -157,7 +159,7 @@ h1 {
     align-items: stretch;
 }
 
-.first h3 {
+.first-section h3 {
     font-size: 1.3rem;
     color: white;
     background-color: grey;

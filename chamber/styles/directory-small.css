@@ -59,7 +59,7 @@
     #members.grid,
     footer,
     .membership,
-    .first,
+    .first-section,
     #business {
         grid-template-columns: 1fr;
         place-content: center;
@@ -75,11 +75,6 @@
 
     .spotlight-card h3 {
         padding: 0;
-    }
-
-    .first> :first-child {
-        height: 200px;
-        /* or whatever height you want on mobile */
     }
 
     .info {
