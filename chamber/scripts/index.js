@@ -6,6 +6,8 @@ const weatherIcon = document.querySelector("#weather-icon");
 const today = document.querySelector("#today");
 const wednesday = document.querySelector("#wednesday");
 const thursday = document.querySelector("#thursday");
+const spotlightContainer = document.querySelector("#business");
+
 
 const Weatherurl = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`
 const forcastUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=imperial`
@@ -36,6 +38,46 @@ async function forFetch() {
         } else {
             throw Error(await respond.text());
         }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+async function loadSpotlights() {
+    try {
+        const spots = await fetch("data/members.json");
+        const spot = await spots.json();
+
+        const qualifiedMembers = spot.filter(member =>
+            member.membershipLevel.includes("Gold") ||
+            member.membershipLevel.includes("Silver")
+        );
+
+        const shuffled = qualifiedMembers.sort(() => 0.5 - Math.random());
+        const selected = shuffled.slice(0, 3);
+
+        // spotlightContainer.innerHTML = "";
+        selected.forEach(member => {
+            const card = document.createElement("div");
+            card.classList.add("spotlight-card");
+
+            card.innerHTML = `
+            <div class="main">
+                <div class="memberName"><h3>${member.name}</h3></div>
+                <section>
+                <div><img src="${member.image}" alt="${member.name} logo"></div>
+                <div class="details">
+                <p><strong>Phone:</strong> ${member.phoneNumber}</p>
+                <p><strong>Address:</strong> ${member.address}</p>
+                <p><a href="${member.websiteUrl}" target="_blank">Visit Website</a></p>
+                <p><strong>Membership:</strong> ${member.membershipLevel}</p>
+                </div>
+                </section>
+            </div>`;
+
+            spotlightContainer.appendChild(card);
+        })
+
     } catch (error) {
         console.log(error);
     }
@@ -72,3 +114,4 @@ function displayResult(info) {
 
 apiFetch();
 forFetch();
+loadSpotlights();

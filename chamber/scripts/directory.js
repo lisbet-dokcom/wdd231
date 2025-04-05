@@ -54,3 +54,4 @@ listButton.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
     fetchMembers();
 });
+

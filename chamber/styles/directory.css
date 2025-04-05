@@ -256,7 +256,6 @@ textarea {
 }
 
 .plan button {
-    background-color: none;
     font-weight: bolder;
 }
 
@@ -319,4 +318,42 @@ textarea {
     font-size: 20px;
     cursor: pointer;
     border-radius: 5px;
+}
+
+.spotlight-card {
+    border-radius: 15px;
+    background-color: #e9dfdf;
+    font-size: small;
+    max-width: 360px;
+    display: inline-block;
+    margin: 10px;
+}
+
+#business {
+    margin-top: 1.5rem;
+}
+
+.spotlight-card img {
+    max-width: 80%;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 2px 10px 3px grey;
+    border-radius: 6px;
+    margin: 0 auto;
+    display: block;
+}
+
+.spotlight-card h3 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.spotlight-card section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.spotlight-card .memberName {
+    border-bottom: 2px solid grey;
+    margin-bottom: 20px;
 }

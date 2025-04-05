@@ -71,6 +71,32 @@
         font-size: 14px;
     }
 
+    .spotlight-card img {
+        max-width: 80%;
+        height: auto;
+        object-fit: cover;
+        box-shadow: 0 2px 10px 3px grey;
+        border-radius: 6px;
+        margin: 0 auto;
+        display: block;
+    }
+
+    .spotlight-card h3 {
+        padding: none;
+    }
+
+    #business {
+        margin: 0 auto;
+    }
+
+    .spotlight-card section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+
+
     /* #members.list h2 {
         font-size: 18px;
     }
