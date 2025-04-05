@@ -171,7 +171,8 @@ h1 {
     background-color: #e9dfdf;
 }
 
-.weather-info p {
+.weather-info p,
+h4 {
     margin-left: 10px;
 }
 
