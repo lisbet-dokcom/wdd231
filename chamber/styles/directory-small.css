@@ -82,7 +82,7 @@
     }
 
     .spotlight-card h3 {
-        padding: none;
+        padding: 0;
     }
 
     #business {
@@ -94,8 +94,6 @@
         grid-template-columns: repeat(2, 1fr);
 
     }
-
-
 
     /* #members.list h2 {
         font-size: 18px;
