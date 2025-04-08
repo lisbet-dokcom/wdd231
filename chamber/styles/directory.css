@@ -284,7 +284,7 @@ fieldset {
     opacity: 0;
     transform: translateY(20px);
     transition: all 0.3s ease-in-out;
-    animation: fadeInUp 1.5s ease-out forwards;
+    animation: fadeInUp 1s ease-out forwards;
 }
 
 @keyframes fadeInUp {
