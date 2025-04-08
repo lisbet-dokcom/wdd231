@@ -40,31 +40,34 @@
             <form action="thank-you.html" method="get">
                 <h3>Membership Application Form</h3>
                 <fieldset>
-                    <label>First Name <input type="text" name="Firstname" title="Firstname" required></label>
-                    <label>Last Name <input type="text" name="Lastname" title="Lastname" required></label>
-                    <label>Organizational Title <input type="text" name="organizationalTitle"
-                            title="organizational"></label>
+                    <label>First Name <input type="text" name="Firstname" title="Firstname" autocomplete="given-name"
+                            required></label>
+                    <label>Last Name <input type="text" name="Lastname" title="Lastname" autocomplete="family-name"
+                            required></label>
+                    <label>Organizational Title <input type="text" name="organizationalTitle" title="organizational"
+                            autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}"></label>
                     <label>Email Address <input type="email" name="emailAddress" title="emailAddress"
                             autocomplete="email" placeholder="johndoe@gmail.com" required></label>
                     <label>Mobile Phone Number <input type="tel" name="phoneNumber" title="phoneNumber"
-                            required></label>
+                            autocomplete="tel" required></label>
                     <label>Business Name<input type="text" name="busName" title="busName" autocomplete="organization"
                             required></label>
-                    <fieldset>
-                        <h4>Membership Plans</h4>
-                        <label class="myradio">Basic Plan<input type="radio" name="level" value="NonProfit"
-                                required></label>
-                        <label class="myradio">Bronze Plan<input type="radio" name="level" value="Bronze Plan"
-                                required></label>
-                        <label class="myradio">Silver Plan<input type="radio" name="level" value="Silver Plan"
-                                required></label>
-                        <label class="myradio">Gold Plan<input type="radio" name="level" value="Gold Plan"
-                                required></label>
-                    </fieldset>
-                    <label>Business Description <textarea title="description" name="description"></textarea></label>
-                    <label><input id="currentdate" type="hidden" name="currentdate" value=""></label>
-                    <button type="submit" class="application">Join Chamber</button>
                 </fieldset>
+                <fieldset>
+                    <h4>Membership Plans</h4>
+                    <label class="myradio">Basic Plan<input type="radio" name="level" value="Non Profit Membership"
+                            required></label>
+                    <label class="myradio">Bronze Plan<input type="radio" name="level" value="Bronze Membership"
+                            required></label>
+                    <label class="myradio">Silver Plan<input type="radio" name="level" value="Silver Membership"
+                            required></label>
+                    <label class="myradio">Gold Plan<input type="radio" name="level" value="Gold Membership"
+                            required></label>
+                </fieldset>
+                <label>Business Description <textarea title="description" name="description" rows="4"
+                        cols="40"></textarea></label>
+                <input id="timestamp" type="hidden" name="currentdate">
+                <button type="submit" class="application">Join Chamber</button>
             </form>
             <section class="real-members">
                 <h3>Membership Levels</h3>

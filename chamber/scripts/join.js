@@ -1,17 +1,16 @@
 const nonMembers = document.querySelector('#nonMembers');
-// const bronzeMembers = document.querySelector('#bronzeMembers');
-// const silverMembers = document.querySelector('#silverMembers');
-// const goldMembers = document.querySelector('#goldMembers');
 const mydialog = document.querySelector('#mydialog');
 const closeButton = document.querySelector("#closeButton");
 const mydialogText = document.querySelector('#mydialog div');
-// const currentdate = document.querySelector("#currentdate") = new Date();
-// currentdate.textContent = new Date().toLocaleDateString();
+document.getElementById("timestamp").value = new Date().toLocaleString('en-US', {
+    dateStyle: 'long',
+    timeStyle: 'short'
+});
 
 nonMembers.addEventListener("click", () => {
     mydialog.showModal();
     mydialogText.innerHTML = `
-    <h3>Non Payment Free Membership</h3>
+    <h3>Non Payment Free Membership🟢</h3>
     <p><strong>Who is it for?</strong> Small businesses, startups, or entrepreneurs looking to explore the chamber's offerings before committing to a paid plan</p>
     <h4>Benefits:</h4>
     <ul>
@@ -19,13 +18,14 @@ nonMembers.addEventListener("click", () => {
     <li>Access to monthly newsletters and updates</li>
     <li>Invitation to community events (limited access)</li>
     <li>Networking opportunities with other members</li>
-    </ul>`
+    </ul>
+    <h4>Monthly Price - $0(Free)</h4>`
 });
 
 bronzeMembers.addEventListener("click", () => {
     mydialog.showModal();
     mydialogText.innerHTML = `
-    <h3>Bronze Membership (Entry-Level Business Support)</h3>
+    <h3>Bronze Membership (Entry-Level Business Support)🥉</h3>
     <p><strong>Who is it for?</strong> Small and growing businesses looking to increase visibility and participate in more networking opportunities.</p>
     <h4>Benefits:</h4>
     <ul>
@@ -34,13 +34,14 @@ bronzeMembers.addEventListener("click", () => {
     <li>Access to select business workshops & training</li>
     <li>Discounts on event participation</li>
     <li>Opportunity to submit guest articles to our blog/newsletter</li>
-    </ul>`
+    </ul>
+    <h4>Monthly Price - $25</h4>`
 });
 
 silverMembers.addEventListener("click", () => {
     mydialog.showModal();
     mydialogText.innerHTML = `
-    <h3>Silver Membership (Growth-Oriented Businesses)</h3>
+    <h3>Silver Membership (Growth-Oriented Businesses)🥈</h3>
     <p><strong>Who is it for?</strong> Businesses that want to expand their market reach and benefit from more promotional opportunities.</p>
     <h4>Benefits:</h4>
     <ul>
@@ -50,13 +51,14 @@ silverMembers.addEventListener("click", () => {
     <li>Priority access to networking events and business expos</li>
     <li>Member-to-member discount programs</li>
     <li>Special sponsorship opportunities for chamber events</li>
-    </ul>`
+    </ul>
+    <h4>Monthly Price - $50</h4>`
 });
 
 goldMembers.addEventListener("click", () => {
     mydialog.showModal();
     mydialogText.innerHTML = `
-    <h3>Gold Membership (Premium Business Partnership)</h3>
+    <h3>Gold Membership(Premium Business Partnership)🥇</h3>
     <p><strong>Who is it for?</strong> Established businesses looking for maximum exposure, netowrking, and leadership opportunities within the chamber.</p>
     <h4>Benefits:</h4>
     <ul>
@@ -67,7 +69,8 @@ goldMembers.addEventListener("click", () => {
     <li>Personal business consultation sessions</li>
     <li>First access to busienss grants and funding opportunities</li>
     <li>Featured as a Gold Sponser in chamber publications and media</li>
-    </ul>`
+    </ul>
+    <h4>Monthly Price - $100</h4>`
 });
 
 closeButton.addEventListener("click", () => {

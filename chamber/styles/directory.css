@@ -205,10 +205,6 @@ input {
     border-left: 5px solid;
 }
 
-input:hover {
-    border-left: 5px solid #bed;
-}
-
 fieldset {
     border: none;
 }
@@ -224,10 +220,6 @@ fieldset {
     display: grid;
     font-weight: bold;
     grid-template-columns: repeat(2, 1fr);
-}
-
-textarea {
-    height: 100px;
 }
 
 ::placeholder {
@@ -285,6 +277,23 @@ textarea {
     border-radius: 5px 20px;
     margin-bottom: 20px;
     height: 100px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease-in-out;
+    animation: fadeInUp 3s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+        background-color: orange;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 #closeButton {
@@ -369,4 +378,60 @@ textarea {
 .spotlight-card .memberName {
     border-bottom: 2px solid grey;
     margin-bottom: 20px;
+}
+
+#discover-card div {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 1rem;
+    overflow: hidden;
+}
+
+#discover-card h2 {
+    margin: 1rem 10px;
+    grid-area: name;
+}
+
+#discover-card p {
+    margin: 1rem 10px;
+    grid-area: description;
+}
+
+#discover-card img {
+    grid-area: image;
+    width: 300px;
+    height: 200px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+}
+
+#discover-card address {
+    margin: 1rem 10px;
+    grid-area: address;
+}
+
+#discover-card img:hover {
+    box-shadow: 0 2px 10px 3px grey;
+
+}
+
+@media (min-width: 640px) {
+    #discover-card div {
+        display: grid;
+        grid-template-areas:
+            "image name"
+            "image description"
+            "image address";
+    }
+}
+
+@media (min-width: 64rem) {
+    #discover-card {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }

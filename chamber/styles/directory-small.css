@@ -80,4 +80,12 @@
     .info {
         line-height: 1.5;
     }
+
+    #discover-card div {
+        grid-template-areas:
+            "name"
+            "image"
+            "description"
+            "address";
+    }
 }

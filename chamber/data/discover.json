@@ -1,0 +1,50 @@
+[
+    {
+        "name": "Olumo Rock",
+        "location": "Ikija Road, Abeokuta, Ogun State",
+        "description": "A majestic granite outcrop with historical significance. It served as a fortress for the Egba people during intertribal wars. Visitors can explore natural caves, ancient carvings, and climb to the summit for panoramic city views.",
+        "imageUrl": "images/olumo.webp"
+    },
+    {
+        "name": "Zuma Rock",
+        "location": "Along Abuja-Kaduna Road, Madalla, Niger State (near Abuja)",
+        "description": "An iconic monolith often called the 'Gateway to Abuja.' The rock features a natural face-like carving and is steeped in local legend. It's a sacred site and a national symbol found on the 100 naira note.",
+        "imageUrl": "images/zuma.webp"
+    },
+    {
+        "name": "Erin Ijesha Waterfalls (Olumirin Waterfalls)",
+        "location": "Erin Ijesha, Oriade LGA, Osun State",
+        "description": "A beautiful seven-step waterfall tucked in a lush rainforest. It's ideal for hiking and nature photography. Each level reveals a different perspective of the cascading water.",
+        "imageUrl": "images/ijesha.webp"
+    },
+    {
+        "name": "Obudu Mountain Resort",
+        "location": "Obanliku LGA, Cross River State",
+        "description": "A high-altitude resort in the Sankwala Mountains. Known for its cool climate, cable cars, mountain lodges, and canopy walkway. Great for family vacations, honeymoons, and nature retreats.",
+        "imageUrl": "images/Obudu.webp"
+    },
+    {
+        "name": "Yankari National Park",
+        "location": "Main Entrance, Yankari Game Reserve, Bauchi State",
+        "description": "Nigeria's top wildlife safari destination. Home to elephants, baboons, hippos, and lions. Also features the Wikki Warm Spring, where visitors can swim in naturally heated water.",
+        "imageUrl": "images/yankari.webp"
+    },
+    {
+        "name": "Nike Art Gallery",
+        "location": "No. 2 Elegushi Road, Lekki, Lagos State",
+        "description": "One of the largest art galleries in West Africa with a vast collection of Nigerian paintings, textiles, sculptures, and crafts. Founded by renowned artist Nike Davies-Okundaye. Entry is free, and art is available for purchase.",
+        "imageUrl": "images/nike.webp"
+    },
+    {
+        "name": "Awhum Waterfall and Cave",
+        "location": "Awhum Monastery, Udi LGA, Enugu State",
+        "description": "A mystical site with a warm waterfall and cave believed to have healing and spiritual powers. Operated by a Catholic monastery, making it a peaceful destination for prayer and retreat.",
+        "imageUrl": "images/Awhum.webp"
+    },
+    {
+        "name": "Lekki Conservation Centre",
+        "location": "KM 19 Lekki-Epe Expressway, Lekki Peninsula, Lagos State",
+        "description": "A 78-hectare nature reserve known for its lush greenery and the longest canopy walkway in Africa. Offers sightings of monkeys, peacocks, and rare birds. Ideal for eco-tourism and school excursions.",
+        "imageUrl": "images/lekki.webp"
+    }
+]

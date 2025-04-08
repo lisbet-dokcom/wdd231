@@ -2,17 +2,7 @@ const getString = window.location.search;
 console.log(getString);
 
 const myInfo = new URLSearchParams(getString);
-console.log(myInfo);
-
 const thankYou = document.querySelector("#thankYou");
-
-console.log(myInfo.get("Firstname"));
-console.log(myInfo.get("Lastname"));
-console.log(myInfo.get("organizationalTitle"));
-console.log(myInfo.get("emailAddress"));
-console.log(myInfo.get("phoneNumber"));
-console.log(myInfo.get("busName"));
-console.log(myInfo.get("level"));
 
 thankYou.innerHTML =
     `<p><strong>First Name:</strong> ${myInfo.get("Firstname")}</p>
