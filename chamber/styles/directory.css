@@ -194,6 +194,10 @@ label {
     font-weight: bold;
 }
 
+legend {
+    display: none
+}
+
 form {
     max-width: 550px;
     height: auto;
