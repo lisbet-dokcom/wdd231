@@ -203,6 +203,10 @@ form {
     height: auto;
 }
 
+textarea {
+    height: 100px;
+}
+
 input {
     height: 2.5rem;
     border-radius: 5px;
