@@ -1,4 +1,4 @@
-@media (max-width: 620px) {
+@media (max-width: 640px) {
     main {
         max-width: 500px;
         margin: 0 auto;
@@ -82,10 +82,15 @@
     }
 
     #discover-card div {
+        display: grid;
         grid-template-areas:
             "name"
             "image"
             "description"
             "address";
+    }
+
+    #discover-card img:hover {
+        box-shadow: none
     }
 }

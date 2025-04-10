@@ -15,4 +15,3 @@ thankYou.innerHTML =
     <p><strong>Business Description:</strong> ${myInfo.get("description")}</p>
     <p><strong>Join Date:</strong> ${myInfo.get("currentdate")}</p>
 `
-

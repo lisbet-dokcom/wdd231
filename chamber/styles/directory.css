@@ -427,6 +427,28 @@ fieldset {
 
 }
 
+#sidebar {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+#visitMessage {
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
 @media (min-width: 640px) {
     #discover-card div {
         display: grid;

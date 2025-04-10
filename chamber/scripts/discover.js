@@ -32,4 +32,35 @@ function displayDiscovery(discovery) {
     })
 }
 
+function calculateDaysBetweenDates(date1, date2) {
+    const timeDiff = date2 - date1;
+    const oneDay = 1000 * 60 * 60 * 24;
+    return Math.floor(timeDiff / oneDay);
+}
+
+const lastVisitDate = localStorage.getItem("lastVisitDate");
+
+const today = new Date();
+
+if (lastVisitDate) {
+    const lastVisit = new Date(lastVisitDate);
+    const daySinceLastVisit = calculateDaysBetweenDates(lastVisit, today);
+
+    let message = "";
+
+    if (daySinceLastVisit < 1) {
+        message = `Back so soon! Awesone!`;
+    } else if (daySinceLastVisit === 1) {
+        message = `You last visited 1 day ago`;
+    } else {
+        message = `You last visited ${daySinceLastVisit} days ago`
+    }
+
+    document.getElementById("visitMessage").textContent = message;
+} else {
+    document.getElementById("visitMessage").textContent = `Welcome! Let us know if you have any questions. `;
+}
+
+localStorage.setItem("lastVisitDate", today.toISOString());
+
 fetchDiscovery();
