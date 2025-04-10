@@ -49,16 +49,16 @@ if (lastVisitDate) {
     let message = "";
 
     if (daySinceLastVisit < 1) {
-        message = `Back so soon! Awesone!`;
+        message = `<p>Back so soon! Awesone!</p>`;
     } else if (daySinceLastVisit === 1) {
-        message = `You last visited 1 day ago`;
+        message = `<p>You last visited 1 day ago</p>`;
     } else {
-        message = `You last visited ${daySinceLastVisit} days ago`
+        message = `<p>You last visited <strong>${daySinceLastVisit}</strong> days ago</p>`
     }
 
-    document.getElementById("visitMessage").textContent = message;
+    document.getElementById("visitMessage").innerHTML = message;
 } else {
-    document.getElementById("visitMessage").textContent = `Welcome! Let us know if you have any questions. `;
+    document.getElementById("visitMessage").innerHTML = `Welcome! Let us know if you have any questions. `;
 }
 
 localStorage.setItem("lastVisitDate", today.toISOString());
