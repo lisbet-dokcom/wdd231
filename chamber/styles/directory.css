@@ -53,6 +53,12 @@ header {
     opacity: 0.9;
 }
 
+.head-links a.current {
+    font-weight: bold;
+    color: #021121;
+    border-bottom: 4px solid #e67e22;
+}
+
 #members {
     display: none;
 }
@@ -120,7 +126,8 @@ header {
 }
 
 #list,
-#grid {
+#grid,
+#discover-button {
     width: 200px;
     height: 40px;
 }

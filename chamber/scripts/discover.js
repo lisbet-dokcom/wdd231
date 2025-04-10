@@ -20,7 +20,8 @@ function displayDiscovery(discovery) {
         card.innerHTML = `
             <h2>${place.name}</h2>
             <address>${place.location}</address>
-            <p>${place.description}</p>`
+            <p>${place.description}</p>
+            <button id="discover-button">Learn More</button>`
 
         const image = document.createElement("img");
         image.src = place.imageUrl;
