@@ -1,3 +1,7 @@
+h2 {
+    display: none;
+}
+
 #sidebar {
     padding: 1.5rem;
     font-weight: bolder;
