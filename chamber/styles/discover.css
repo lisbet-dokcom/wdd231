@@ -28,14 +28,22 @@
 }
 
 #discover-button {
-    background-color: aqua;
+    background-color: #00bcd4;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
     font-size: 1rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 #discover-button:hover {
-    transition: none;
-    transform: none;
-    opacity: none;
+    background-color: #0097a7;
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 #discover-card h2 {
@@ -80,6 +88,10 @@
 
     #discover-card img {
         margin-top: 15px;
+    }
+
+    #discover-button {
+        margin-top: 1rem;
     }
 }
 

@@ -56,6 +56,11 @@
         max-height: 100vh;
     }
 
+    .head-links a.current {
+        color: #FFD700;
+        border: none;
+    }
+
     #members.grid,
     footer,
     .membership,
