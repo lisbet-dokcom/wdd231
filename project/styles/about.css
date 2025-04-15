@@ -1,0 +1,22 @@
+.begin-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 10px;
+}
+
+
+.begin-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    gap: 20px;
+    color: black;
+    /* margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 200px; */
+}
+
+.begin-container img {
+    height: 300px;
+    object-fit: contain;
+}

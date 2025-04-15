@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    max-width: 100%;
+    padding: 10px;
+}
+
+body {
+    font-family: "Winky Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    height: 70px;
+    padding: 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+#menu {
+    display: none;
+}
+
+.head-link {
+    display: flex;
+    gap: 60px;
+}
+
+.head-link a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.my_cover {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+.sub-hero {
+    position: absolute;
+    color: white;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+
+
+footer {
+    background-color: black;
+    color: white;
+    height: 40px;
+}
+
+.hours-container,
+.drop-container {
+    margin-bottom: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 6rem;
+    height: auto;
+}
+
+.content {
+    border-bottom: 1px red solid;
+}
+
+.hours-container h2 {
+    padding-bottom: 2rem;
+}
+
+.hours-container button,
+.drop-container button {
+    margin: 2rem;
+    background-color: orange;
+    height: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    padding: 20px
+}
+
+.my_cover2 {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.hero2 {
+    width: 100%;
+    height: 500px;
+    position: relative;
+}
+
+/* .container {
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    top: 60%;
+} */
+
+.our-story {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: black;
+    gap: 100px;
+    color: white;
+    object-fit: cover;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    padding: 200px;
+}
+
+.our-story img {
+    height: 200px;
+    object-fit: contain;
+}

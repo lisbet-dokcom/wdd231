@@ -1,0 +1,70 @@
+.contact {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 80px;
+    background-color: azure;
+}
+
+.contact form {
+    display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 10px;
+}
+
+.contact input {
+    padding: 1rem;
+    width: 290px;
+}
+
+.contact textarea {
+    height: 300px;
+    width: 600px;
+}
+
+.contact ::placeholder {
+    padding: 10px;
+    font-weight: bold;
+    color: grey;
+}
+
+.contact button {
+    padding: 12px;
+    background-color: goldenrod;
+    border: none;
+    color: whitesmoke;
+    margin-left: 560px;
+}
+
+.contact button:hover {
+    transition: transform 0.5s ease;
+    transform: scale(1.10);
+    cursor: pointer;
+}
+
+.sub-contact1 {
+    background-color: grey;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+}
+
+.sub-contact1 img {
+    border: 40px solid grey;
+}
+
+.sub-contact {
+    margin: 0 auto;
+}
+
+/* <div>
+                <h3>Contact</h3>
+                <h2>Get In Touch</h2>
+                <form>
+                    <label><input type="text" name="firstname" required placeholder="First Name"></label>
+                    <label><input type="text" name="lastname" required placeholder="Last Name"></label>
+                    <label><input type="email" name="email" required placeholder="Email"></label>
+                    <label><input type="tel" name="phoneNumber" required placeholder="Mobile Number"></label>
+                    <label><textarea name="message" placeholder="Message"></textarea></label>
+                </form>
+            </div> */
