@@ -1,0 +1,304 @@
+{
+    "recipes": [
+      {
+        "id": 1,
+        "title": "Sushi",
+        "image": "sushi.jpg",
+        "time": 50,
+        "rating": 5.0,
+        "type": "Keto",
+        "ingredients": ["Sushi rice", "Nori", "Raw fish", "Vegetables"],
+        "steps": ["Cook rice", "Slice fish", "Roll sushi"]
+      },
+      {
+        "id": 2,
+        "title": "Beef Bulgogi",
+        "image": "beef-bulgogi.jpg",
+        "time": 35,
+        "rating": 4.6,
+        "type": "Dairy-Free",
+        "ingredients": ["Beef", "Soy sauce", "Garlic", "Sugar"],
+        "steps": ["Marinate beef", "Grill or pan-fry", "Serve with rice"]
+      },
+      {
+        "id": 3,
+        "title": "Sushi",
+        "image": "sushi.jpg",
+        "time": 50,
+        "rating": 4.9,
+        "type": "Halal",
+        "ingredients": ["Sushi rice", "Nori", "Raw fish", "Vegetables"],
+        "steps": ["Cook rice", "Slice fish", "Roll sushi"]
+      },
+      {
+        "id": 4,
+        "title": "Pad Thai",
+        "image": "pad-thai.jpg",
+        "time": 30,
+        "rating": 4.5,
+        "type": "Keto",
+        "ingredients": ["Rice noodles", "Tofu", "Peanuts", "Bean sprouts"],
+        "steps": ["Soak noodles", "Stir-fry tofu", "Add sauce and noodles"]
+      },
+      {
+        "id": 5,
+        "title": "Beef Bulgogi",
+        "image": "beef-bulgogi.jpg",
+        "time": 35,
+        "rating": 4.7,
+        "type": "Dairy-Free",
+        "ingredients": ["Beef", "Soy sauce", "Garlic", "Sugar"],
+        "steps": ["Marinate beef", "Grill or pan-fry", "Serve with rice"]
+      },
+      {
+        "id": 6,
+        "title": "Butter Chicken",
+        "image": "butter-chicken.jpg",
+        "time": 45,
+        "rating": 4.8,
+        "type": "Vegan",
+        "ingredients": ["Chicken", "Tomatoes", "Cream", "Spices"],
+        "steps": ["Cook chicken", "Prepare sauce", "Simmer together"]
+      },
+      {
+        "id": 7,
+        "title": "Pho",
+        "image": "pho.jpg",
+        "time": 120,
+        "rating": 4.9,
+        "type": "Vegan",
+        "ingredients": ["Beef broth", "Rice noodles", "Herbs", "Beef slices"],
+        "steps": ["Prepare broth", "Cook noodles", "Assemble bowl"]
+      },
+      {
+        "id": 8,
+        "title": "Falafel",
+        "image": "falafel.jpg",
+        "time": 45,
+        "rating": 4.5,
+        "type": "Vegetarian",
+        "ingredients": ["Chickpeas", "Garlic", "Parsley", "Spices"],
+        "steps": ["Blend ingredients", "Form balls", "Deep fry"]
+      },
+      {
+        "id": 9,
+        "title": "Moussaka",
+        "image": "moussaka.jpg",
+        "time": 60,
+        "rating": 4.3,
+        "type": "Low-Carb",
+        "ingredients": ["Eggplant", "Lamb", "Tomato", "Béchamel"],
+        "steps": ["Fry eggplant", "Cook lamb", "Layer and bake"]
+      },
+      {
+        "id": 10,
+        "title": "Spaghetti Carbonara",
+        "image": "spaghetti-carbonara.jpg",
+        "time": 20,
+        "rating": 4.5,
+        "type": "Keto",
+        "ingredients": ["Pasta", "Eggs", "Bacon", "Parmesan"],
+        "steps": ["Boil pasta", "Fry bacon", "Mix eggs with cheese"]
+      },
+      {
+        "id": 11,
+        "title": "Ratatouille",
+        "image": "ratatouille.jpg",
+        "time": 40,
+        "rating": 4.6,
+        "type": "Vegan",
+        "ingredients": ["Eggplant", "Zucchini", "Tomatoes", "Bell pepper", "Garlic"],
+        "steps": ["Chop vegetables", "Sauté garlic", "Simmer vegetables together"]
+      },
+      {
+        "id": 12,
+        "title": "Biryani",
+        "image": "biryani.jpg",
+        "time": 60,
+        "rating": 4.7,
+        "type": "Halal",
+        "ingredients": ["Basmati rice", "Chicken", "Spices", "Yogurt", "Onions"],
+        "steps": ["Marinate chicken", "Cook rice", "Layer and cook together"]
+      },
+      {
+        "id": 13,
+        "title": "Feijoada",
+        "image": "feijoada.jpg",
+        "time": 150,
+        "rating": 4.4,
+        "type": "Omnivore/Regular",
+        "ingredients": ["Black beans", "Pork", "Beef", "Garlic", "Bay leaves"],
+        "steps": ["Soak beans", "Cook meat", "Simmer with beans and spices"]
+      },
+      {
+        "id": 14,
+        "title": "Tacos al Pastor",
+        "image": "tacos-al-pastor.jpg",
+        "time": 30,
+        "rating": 4.6,
+        "type": "Omnivore/Regular",
+        "ingredients": ["Pork", "Pineapple", "Corn tortillas", "Chili", "Onions"],
+        "steps": ["Marinate pork", "Grill meat", "Assemble tacos"]
+      },
+      {
+        "id": 15,
+        "title": "Kimchi Jjigae",
+        "image": "kimchi-jjigae.jpg",
+        "time": 40,
+        "rating": 4.7,
+        "type": "Low-Carb",
+        "ingredients": ["Kimchi", "Tofu", "Pork", "Garlic", "Gochugaru"],
+        "steps": ["Sauté kimchi", "Add broth", "Simmer with tofu and pork"]
+      },
+      {
+        "id": 16,
+        "title": "Shakshuka",
+        "image": "shakshuka.jpg",
+        "time": 25,
+        "rating": 4.5,
+        "type": "Vegetarian",
+        "ingredients": ["Eggs", "Tomatoes", "Bell peppers", "Garlic", "Spices"],
+        "steps": ["Cook tomato sauce", "Crack eggs into sauce", "Simmer until eggs set"]
+      },
+      {
+        "id": 17,
+        "title": "Couscous Royale",
+        "image": "couscous-royale.jpg",
+        "time": 60,
+        "rating": 4.4,
+        "type": "Halal",
+        "ingredients": ["Couscous", "Chicken", "Lamb", "Vegetables", "Chickpeas"],
+        "steps": ["Cook meat", "Prepare couscous", "Serve with broth"]
+      },
+      {
+        "id": 18,
+        "title": "Goulash",
+        "image": "goulash.jpg",
+        "time": 90,
+        "rating": 4.6,
+        "type": "Gluten-Free",
+        "ingredients": ["Beef", "Onions", "Paprika", "Garlic", "Tomatoes"],
+        "steps": ["Sear beef", "Add onions and spices", "Simmer until tender"]
+      },
+      {
+        "id": 19,
+        "title": "Jollof Rice",
+        "image": "jollof-rice.jpg",
+        "time": 50,
+        "rating": 4.8,
+        "type": "Dairy-Free",
+        "ingredients": ["Rice", "Tomatoes", "Onions", "Bell peppers", "Spices"],
+        "steps": ["Blend sauce", "Cook sauce", "Add rice and simmer"]
+      },
+      {
+        "id": 20,
+        "title": "Empanadas",
+        "image": "empanadas.jpg",
+        "time": 45,
+        "rating": 4.3,
+        "type": "Omnivore/Regular",
+        "ingredients": ["Flour", "Beef", "Onions", "Eggs", "Olives"],
+        "steps": ["Prepare dough", "Cook filling", "Stuff and bake"]
+      },
+      {
+        "id": 21,
+        "title": "Pierogi",
+        "image": "pierogi.jpg",
+        "time": 60,
+        "rating": 4.6,
+        "type": "Vegetarian",
+        "ingredients": ["Flour", "Potatoes", "Cheese", "Onions", "Butter"],
+        "steps": ["Make dough", "Prepare filling", "Boil and pan-fry"]
+      },
+      {
+        "id": 22,
+        "title": "Arepas",
+        "image": "arepas.jpg",
+        "time": 30,
+        "rating": 4.5,
+        "type": "Gluten-Free",
+        "ingredients": ["Cornmeal", "Salt", "Water", "Cheese", "Butter"],
+        "steps": ["Mix dough", "Form patties", "Grill until golden"]
+      },
+      {
+        "id": 23,
+        "title": "Chakalaka & Pap",
+        "image": "chakalaka-pap.jpg",
+        "time": 45,
+        "rating": 4.7,
+        "type": "Vegan",
+        "ingredients": ["Maize meal", "Tomatoes", "Beans", "Onions", "Carrots"],
+        "steps": ["Cook pap", "Sauté vegetables", "Combine with beans"]
+      },
+      {
+        "id": 24,
+        "title": "Tagine",
+        "image": "tagine.jpg",
+        "time": 90,
+        "rating": 4.8,
+        "type": "Halal",
+        "ingredients": ["Lamb", "Apricots", "Almonds", "Spices", "Onions"],
+        "steps": ["Brown lamb", "Add ingredients", "Simmer in tagine pot"]
+      },
+      {
+        "id": 25,
+        "title": "Laksa",
+        "image": "laksa.jpg",
+        "time": 40,
+        "rating": 4.5,
+        "type": "Pescatarian",
+        "ingredients": ["Rice noodles", "Coconut milk", "Shrimp", "Curry paste"],
+        "steps": ["Boil broth", "Cook noodles", "Add seafood and toppings"]
+      },
+      {
+        "id": 26,
+        "title": "Tabbouleh",
+        "image": "tabbouleh.jpg",
+        "time": 20,
+        "rating": 4.4,
+        "type": "Vegan",
+        "ingredients": ["Bulgur", "Parsley", "Tomatoes", "Mint", "Lemon juice"],
+        "steps": ["Soak bulgur", "Chop vegetables", "Mix all ingredients"]
+      },
+      {
+        "id": 27,
+        "title": "Chicken Adobo",
+        "image": "chicken-adobo.jpg",
+        "time": 50,
+        "rating": 4.7,
+        "type": "Omnivore/Regular",
+        "ingredients": ["Chicken", "Soy sauce", "Vinegar", "Garlic", "Bay leaves"],
+        "steps": ["Marinate chicken", "Simmer in sauce", "Reduce sauce"]
+      },
+      {
+        "id": 28,
+        "title": "Sarmale (Cabbage Rolls)",
+        "image": "sarmale.jpg",
+        "time": 120,
+        "rating": 4.6,
+        "type": "Kosher",
+        "ingredients": ["Cabbage leaves", "Ground meat", "Rice", "Onion", "Tomato sauce"],
+        "steps": ["Make filling", "Wrap cabbage", "Simmer in sauce"]
+      },
+      {
+        "id": 29,
+        "title": "Injera with Doro Wat",
+        "image": "injera-doro-wat.jpg",
+        "time": 75,
+        "rating": 4.9,
+        "type": "Halal",
+        "ingredients": ["Teff flour", "Chicken", "Berbere spice", "Onions", "Eggs"],
+        "steps": ["Cook stew", "Make injera batter", "Serve together"]
+      },
+      {
+        "id": 30,
+        "title": "Clam Chowder",
+        "image": "clam-chowder.jpg",
+        "time": 35,
+        "rating": 4.5,
+        "type": "Pescatarian",
+        "ingredients": ["Clams", "Potatoes", "Cream", "Celery", "Onions"],
+        "steps": ["Sauté veggies", "Add clams and broth", "Simmer until creamy"]
+      }
+    ]
+  }

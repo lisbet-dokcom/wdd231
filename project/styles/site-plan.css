@@ -1,0 +1,67 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --tomato-red: #E94B3C;
+    --olive-green: #6B8E23;
+    --light-cream: #FFF8E7;
+    --charcoal-gray: #333333;
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Open Sans', sans-serif;
+    --script-font: 'Dancing Script', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    background-color: var(--light-cream);
+    color: var(--charcoal-gray);
+    line-height: 1.6;
+    padding: 1rem;
+}
+
+header {
+    background-color: var(--olive-green);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+}
+
+h2,
+h3 {
+    font-family: var(--heading-font);
+    color: var(--tomato-red);
+    margin-bottom: 0.5rem;
+}
+
+section {
+    margin: 2rem 0;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+ul {
+    margin-left: 1.5rem;
+}
+
+strong {
+    font-weight: 600;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
