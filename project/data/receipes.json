@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Vegan Tacos",
+        "diet": "vegan",
+        "cuisine": "mexican",
+        "time": "30 mins",
+        "image": "images/vegan-tacos.jpg",
+        "ingredients": [
+            "Avocado",
+            "Black Beans",
+            "Corn Tortillas"
+        ],
+        "instructions": "..."
+    },
+    {
+        "id": 2,
+        "name": "Keto Pizza",
+        "diet": "keto",
+        "cuisine": "italian",
+        "time": "45 mins",
+        "image": "images/keto-pizza.jpg",
+        "ingredients": [
+            "Almond Flour",
+            "Cheese",
+            "Tomato Sauce"
+        ],
+        "instructions": "..."
+    }
+]

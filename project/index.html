@@ -1,0 +1,65 @@
+<!-- We'll create the file structure and content for a 3-page website + form + modal + JS components -->
+<!-- This file is the landing (home) page: index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="FlavorFusion - Discover easy, budget-friendly recipes with cultural stories and dietary filters." />
+    <meta property="og:title" content="FlavorFusion - Curated Recipes Hub" />
+    <meta property="og:description" content="Search budget-friendly recipes by cuisine, ingredients, and more!" />
+    <meta property="og:image" content="images/og-flavorfusion.jpg" />
+    <meta property="og:url" content="https://yourdomain.com" />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>FlavorFusion | Home</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">FlavorFusion</a>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html">Recipes</a></li>
+                <li><a href="blog.html">Cultural Stories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Welcome to FlavorFusion</h1>
+            <p>Curated, easy-to-make meals inspired by cultures around the world.</p>
+            <a href="recipes.html" class="btn">Explore Recipes</a>
+        </section>
+
+        <section class="features">
+            <div class="feature">
+                <h2>Searchable Recipes</h2>
+                <p>Filter by ingredients, time, cuisine or dietary needs.</p>
+            </div>
+            <div class="feature">
+                <h2>Affordable Ingredients</h2>
+                <p>Meals that are light on your wallet, heavy on flavor.</p>
+            </div>
+            <div class="feature">
+                <h2>Cultural Deep Dives</h2>
+                <p>Learn the stories behind your favorite dishes.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 FlavorFusion. All rights reserved.</p>
+        <a href="attributions.html">Attributions</a>
+    </footer>
+
+    <script type="module" src="scripts/nav.js"></script>
+</body>
+
+</html>

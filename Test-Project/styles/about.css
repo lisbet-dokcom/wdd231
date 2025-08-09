@@ -1,22 +1,28 @@
-.begin-container {
+/* .begin-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 10px;
-}
+} */
 
 
 .begin-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    background-color: white;
+    background-color: purple;
     gap: 20px;
     color: black;
-    /* margin-top: 5px;
-    margin-bottom: 10px;
-    padding: 200px; */
+    margin: 1rem 0px;
+    height: auto;
+    padding: 20px;
 }
 
 .begin-container img {
-    height: 300px;
-    object-fit: contain;
+    margin: auto 0;
+    width: 20px;
+    height: 50px;
+}
+
+.begin-container div {
+    margin: auto 0;
+
 }

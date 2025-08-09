@@ -1,0 +1,77 @@
+<!-- recipes.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Discover recipes at FlavorFusion - Filter by ingredients, cuisine, and more!" />
+    <meta property="og:title" content="FlavorFusion - Recipes" />
+    <meta property="og:description" content="Explore recipes with dynamic filtering for easy meal planning." />
+    <meta property="og:image" content="images/og-flavorfusion.jpg" />
+    <meta property="og:url" content="https://yourdomain.com/recipes.html" />
+    <link rel="icon" href="images/favicon.png" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>FlavorFusion | Recipes</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">FlavorFusion</a>
+            <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="recipes.html" class="active">Recipes</a></li>
+                <li><a href="blog.html">Cultural Stories</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter-bar">
+            <h1>Find Your Perfect Recipe</h1>
+            <div class="filters">
+                <select id="dietFilter">
+                    <option value="all">All Diets</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="keto">Keto</option>
+                </select>
+                <select id="cuisineFilter">
+                    <option value="all">All Cuisines</option>
+                    <option value="italian">Italian</option>
+                    <option value="nigerian">Nigerian</option>
+                    <option value="mexican">Mexican</option>
+                </select>
+                <select id="timeFilter">
+                    <option value="all">Any Time</option>
+                    <option value="15">Under 15 min</option>
+                    <option value="30">Under 30 min</option>
+                    <option value="60">Under 1 hour</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="recipe-grid" id="recipeList">
+            <!-- Recipes will be loaded dynamically here -->
+        </section>
+    </main>
+
+    <div id="recipeModal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div id="modalDetails"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 FlavorFusion. All rights reserved.</p>
+        <a href="attributions.html">Attributions</a>
+    </footer>
+
+    <script type="module" src="scripts/nav.js"></script>
+    <script type="module" src="scripts/recipes.js"></script>
+</body>
+
+</html>

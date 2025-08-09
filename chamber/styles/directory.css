@@ -68,7 +68,7 @@ header {
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10px;
     text-align: center;
-    align-items: center;
+    /* align-items: center;  Comment after assignment saw this was not necessary*/
     font-size: 14px;
     line-height: 0.78;
     justify-items: center;

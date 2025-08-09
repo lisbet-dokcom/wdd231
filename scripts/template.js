@@ -33,3 +33,25 @@ function displayResult(data) {
 }
 
 apiFetch();
+
+class House {
+    constructor(color) {
+        this.color = color;
+    }
+    getFurniture() {
+        return 'sofa';
+    }
+}
+
+const houseObject = new House('red');
+const houseObject2 = new House('blue');
+console.log(houseObject2.getFurniture());
+
+let count = 0;
+const intervalId = setInterval(() => {
+    count += 1;
+    console.log(count);
+    if (count === 3) {
+        clearInterval(intervalId);
+    }
+}, 1000);

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Form Submitted | FlavorFusion</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <a href="index.html" class="logo">FlavorFusion</a>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Thank You!</h1>
+        <p>Your form has been submitted successfully.</p>
+
+        <div class="form-data">
+            <h2>Your Information</h2>
+            <p id="submitted-email"></p>
+        </div>
+
+        <a href="index.html" class="btn">Return Home</a>
+    </main>
+
+    <script>
+        // Display submitted form data
+        const urlParams = new URLSearchParams(window.location.search);
+        const email = urlParams.get('email');
+        document.getElementById('submitted-email').textContent = `Email: ${email || 'Not provided'}`;
+    </script>
+</body>
+
+</html>
